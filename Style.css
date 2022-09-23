@@ -1,0 +1,87 @@
+#main {
+    display: grid;
+    grid-template:
+        'n1 b1 add sub'
+        'n2 b2 mul div'
+        'result b3 cal cal'
+        'noti t t t';
+    width: 600px;
+    font-size: 20px;
+    grid-gap: 8px 10px;
+    grid-template-columns: 101px 1fr 90px 90px;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0 0 0 5px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+#text-noti {
+    color: red;
+}
+
+#num1 {
+    grid-area: n1;
+}
+
+#num2 {
+    grid-area: n2;
+}
+
+#result {
+    grid-area: result;
+}
+
+#noti {
+    grid-area: noti;
+}
+
+#box1 {
+    grid-area: b1;
+    height: 30px;
+    font-size: 20px;
+}
+
+#box2 {
+    grid-area: b2;
+    height: 30px;
+    font-size: 20px;
+}
+
+#box3 {
+    grid-area: b3;
+    height: 30px;
+    font-size: 20px;
+}
+
+#text-noti {
+    grid-area: t;
+}
+
+#add {
+    grid-area: add;
+}
+
+#mul {
+    grid-area: mul;
+}
+
+#sub {
+    grid-area: sub;
+}
+
+#div {
+    grid-area: div;
+}
+
+#cal-button {
+    grid-area: cal;
+    width: 30%;
+    font-size: 18px;
+}
